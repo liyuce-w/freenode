@@ -2,9 +2,12 @@ name: Daily Download freenode.yaml
 
 on:
   schedule:
-    # 北京时间每天 12:00 运行 (UTC 4:00)
     - cron: '0 6 * * *'
-  workflow_dispatch:   # 允许手动触发
+  workflow_dispatch:
+
+# 🔑 关键：允许 Actions 推送到仓库
+permissions:
+  contents: write
 
 jobs:
   download:

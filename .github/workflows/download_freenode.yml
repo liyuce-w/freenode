@@ -4,7 +4,7 @@ on:
   schedule:
     # 北京时间每天 12:00 运行 (UTC 4:00)
     - cron: '*/15 * * * *'
-  workflow_dispatch:   # 允许手动触发
+#  workflow_dispatch:   # 允许手动触发
 
 # 🔑 授予写入权限，允许 git push
 permissions:

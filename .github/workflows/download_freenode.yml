@@ -2,7 +2,7 @@ name: Daily Download freenode.yaml
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 4 * * *'
   workflow_dispatch:
 
 # 🔑 关键：允许 Actions 推送到仓库
